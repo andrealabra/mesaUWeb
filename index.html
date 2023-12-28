@@ -25,7 +25,8 @@
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#apply">Apply</a></li>
-          <li><a href="#projects">Schedule</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#team-section">Meet the TEAM</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -41,7 +42,8 @@
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#apply" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#schedule" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#team-section" onclick="toggleMenu()">Meet the Team </a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
@@ -57,7 +59,7 @@
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+            onclick="window.open('./assets/')"
           >
             Download CV
           </button>
@@ -154,7 +156,7 @@
     </section>
     <section id="apply">
       <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
+      <h1 class="title">Apply</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
@@ -287,9 +289,9 @@
       />
 
     </section>
-    <section id="projects">
+    <section id="schedule">
       <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
+      <h1 class="title">Schedule</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container color-container">
@@ -360,7 +362,6 @@
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/'"
               >
-                Live Demo
               </button>
             </div>
           </div>
@@ -374,6 +375,39 @@
       />
     </section>
 
+
+<!-- Team Section -->
+<section class="container column" id="team-section">
+  <h1 class="subtitle">Meet the Team</h1>
+
+  <!-- Filter Buttons -->
+  <div class="container row" id="button-section">
+      <button class="filter-button active" onclick="filterSelection('all')">All</button>
+      <button class="filter-button" onclick="filterSelection('chabot')">Chabot Students</button>
+      <button class="filter-button" onclick="filterSelection('csueb')">CSU East Bay Students</button>
+      <button class="filter-button" onclick="filterSelection('grads')">Graduate Students</button>
+  </div>
+
+  <!-- Individual Team Members -->
+  <div class="container row" id="project-container">
+
+      <!-- Andrea Labra Orozco -->
+      <div class="each-project grads">
+          <img class="proj-img" src="assets/andrea.png" alt="Andrea Labra Orozco">
+          <div class="proj-description container column">
+              <div class="img-description">
+                  <h2>Andrea Labra Orozco</h2>
+                  <p>Graduate Student at CSUEB</p>
+                  <i>BS Computer Science, MS Statistics Data Science</i>
+              </div>
+          </div>
+      </div>
+
+
+  </div>
+</section>
+
+
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
@@ -384,7 +418,7 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+          <p><a href="mesa.u.hacks@gmail.com">Example@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
           <img
@@ -402,12 +436,13 @@
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#apply">Apply</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#team-section">Meet the Team</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
-      <p>Made with ♡ & ☕︎</p>
+      <p>Made with ♡ & ☕︎ by MESA U HACKS Team </p>
     </footer>
     <script src="script.js"></script>
   </body>
