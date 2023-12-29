@@ -18,7 +18,6 @@
             class="icon"
             onclick="location.href='https:https://sites.google.com/csueastbay.edu/csu-east-bay-mesa-college-prep/home'"
           />
-
       </div>
 
       <div>
@@ -26,11 +25,12 @@
           <li><a href="#about">About</a></li>
           <li><a href="#apply">Apply</a></li>
           <li><a href="#schedule">Schedule</a></li>
-          <li><a href="#team-section">Meet the TEAM</a></li>
+          <li><a href="#team-section">TEAM</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
+
     <nav id="hamburger-nav">
       <div class="logo">Welcome to MESA U Hacks</div>
       <div class="hamburger-menu">
@@ -43,11 +43,13 @@
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#apply" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#schedule" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#team-section" onclick="toggleMenu()">Meet the Team </a></li>
+          <li><a href="#team-section" onclick="toggleMenu()">Team </a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
+
+
     <section id="profile">
       <div class="section__pic-container">
         <img src="./assets/arrow.png" alt="MESA U Hacks Logo" />
@@ -59,9 +61,24 @@
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/')"
+            onclick="window.open('./')"
+             class="btn btn-color-1" onclick="scrollToContact()">
+              Contact Info
+          </button>
+          <!-- JavaScript function to scroll to the contact section -->
+          <script>
+              function scrollToContact() {
+                // Get the element with the ID "contact"
+                  var contactSection = document.getElementById('contact');
+                  // Check if the element exists
+                  if (contactSection) {
+                     // Scroll to the "contact" section with a smooth behavior
+                      contactSection.scrollIntoView({ behavior: 'smooth' });
+                  }
+              }
+          </script>
           >
-            Download CV
+            
           </button>
 
 
@@ -81,8 +98,6 @@
                 }
             }
         </script>
-        
-          
         </div>
         <div id="socials-container">
           <img
@@ -100,6 +115,8 @@
         </div>
       </div>
     </section>
+
+
     
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
@@ -290,7 +307,7 @@
 
     </section>
     <section id="schedule">
-      <p class="section__text__p1">Browse My Recent</p>
+      <p class="section__text__p1">Browse The</p>
       <h1 class="title">Schedule</h1>
       <div class="experience-details-container">
         <div class="about-containers">
@@ -302,7 +319,7 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="experience-sub-title project-title">DAY One</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -326,7 +343,7 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h2 class="experience-sub-title project-title">DAY Two</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -350,7 +367,7 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="experience-sub-title project-title">DAY Three</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -378,15 +395,7 @@
 
 <!-- Team Section -->
 <section class="container column" id="team-section">
-  <h1 class="subtitle">Meet the Team</h1>
-
-  <!-- Filter Buttons -->
-  <div class="container row" id="button-section">
-      <button class="filter-button active" onclick="filterSelection('all')">All</button>
-      <button class="filter-button" onclick="filterSelection('chabot')">Chabot Students</button>
-      <button class="filter-button" onclick="filterSelection('csueb')">CSU East Bay Students</button>
-      <button class="filter-button" onclick="filterSelection('grads')">Graduate Students</button>
-  </div>
+  <h1 class="title">Meet the Team</h1>
 
   <!-- Individual Team Members -->
   <div class="container row" id="project-container">
@@ -396,12 +405,25 @@
           <img class="proj-img" src="assets/andrea.png" alt="Andrea Labra Orozco">
           <div class="proj-description container column">
               <div class="img-description">
-                  <h2>Andrea Labra Orozco</h2>
+
+                  <h2>
+                    <p>
+                      <a href="https://www.linkedin.com/in/andrealabrao/"target="_blank" rel="noopener noreferrer"
+                      >Andrea Labra Orozco</a>
+                    </p>
+                  </h2>
                   <p>Graduate Student at CSUEB</p>
                   <i>BS Computer Science, MS Statistics Data Science</i>
+
+
+
+
+
               </div>
           </div>
       </div>
+
+
 
 
   </div>
@@ -418,7 +440,7 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mesa.u.hacks@gmail.com">Example@gmail.com</a></p>
+          <p><a href="mesa.u.hacks@gmail.com">EMAIL US</a></p>
         </div>
         <div class="contact-info-container">
           <img
@@ -437,7 +459,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#apply">Apply</a></li>
             <li><a href="#schedule">Schedule</a></li>
-            <li><a href="#team-section">Meet the Team</a></li>
+            <li><a href="#team-section">Team</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
