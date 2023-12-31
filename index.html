@@ -43,7 +43,7 @@
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#apply" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Schedule</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
@@ -289,6 +289,133 @@
       />
 
     </section>
+    <section id="schedule">
+      <div class="Heading">
+        <h1> Itinerary.</h1>
+      </div>
+      
+      
+    <canvas id="myCanvas" width="1505" height="2000" style="border:1px solid grey;"></canvas>
+    <script>
+     const canvas = document.getElementById("myCanvas");
+     const ctx = canvas. getContext("2d");
+     
+     ctx.beginPath();
+
+     ctx.moveTo(1000,0);
+
+     ctx.lineTo(1000,700);
+     ctx.lineWidth = 5;
+     ctx.lineCap = "round";
+     ctx.stroke();
+
+     ctx.beginPath();
+     ctx.moveTo(1000,700);
+     
+     ctx.lineTo(550,700);
+     ctx.lineWidth = 5;
+     ctx.lineCap = "round";
+     ctx.stroke();
+
+    </script>
+
+
+
+<!-- Friday Agenda -->
+      <table>
+        <tr>
+          <th>    College/University Students    </th>
+          <th>    Time </th>
+          <th>    Middle and High Students    </th>
+        </tr>
+        <tr>
+          <td> Row 1 </td>
+          <td> Row 2 </td>
+          <td> Virtual Late Afternoon Kick-off </td>
+        </tr>
+        <tr>
+          <td> Row 1 </td>
+          <td> Row 2 </td>
+          <td> N/A  </td>
+        </tr>
+      </table>
+   
+
+
+<!-- Saturday Agenda -->
+      <table>
+        <tr>
+          <th> College/University Students </th>
+          <th> Time </th>
+          <th> Middle and High Students </th>
+        </tr>
+        <tr>
+          <td>    Row 1    </td>
+          <td>    8am    </td>
+          <td>    MS & HS Guest Arrive    </td>
+        </tr>
+        <tr>
+          <td>     Row 1    </td>
+          <td>     8am - 8:45am    </td>
+          <td>     Breakfast (Food Description: TBD)     </td>
+        </tr>
+        <tr>
+          <th>    Kick-Off    </th>
+          <th>    8:45am - 9:15am    </th>
+          <th>    Opening Remarks    </th>
+        </tr>
+        <tr>
+          <th>     Row 1     </th>
+          <th>     9:15am -  </th>
+          <th>     Row 3     </th>
+        </tr>
+        <tr>
+          <th>     Row 1    </th>
+          <th>     4pm      </th>
+          <th>     MS and HS Guest Dismissed  </th>
+        </tr>
+      </table>
+
+
+<!-- Sunday Agenda -->
+      <table>
+        <tr>
+          <th> College/University Students </th>
+          <th> Time </th>
+          <th> Middle and High Students </th>
+        </tr>
+        <tr>
+          <td>Row 1 </td>
+          <td>Row 2 </td>
+          <td>    Virtual Close Out    </td>
+        </tr>
+        <tr>
+          <td>Row 1 </td>
+          <td>Row 2 </td>
+          <td>Row 3  </td>
+        </tr>
+      </table>
+
+
+<!-- Friday rounded square -->
+   <svg width= "1600" height="600">
+     <rect x="5" y="20" rx="60" width="500" height="300" style="fill:orange;stroke:red;stroke-width:5;opacity:0.5"/>
+
+
+<!-- Saturday rounded square -->
+     <rect x="550" y="20" rx="60" width="500" height="300" style="fill:orange;stroke:red;stroke-width:5;opacity:0.5"/>
+   </svg>  
+
+
+ <!-- Sunday rounded Square --> 
+   <svg width= "600" height="600">
+     <rect x="5" y="20" rx="60" width="500" height="300" style="fill:orange;stroke:red;stroke-width:5;opacity:0.5"/>
+   </svg>
+
+   
+    </section>
+
+
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>

@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open index.html",
-            "file": "/Users/andrealabraorozco/Desktop/mesaUWeb/index.html"
+            "file": "C:/Users/andrealabraorozco/Desktop/mesaUWeb/index.html"
         }
     ]
 }
