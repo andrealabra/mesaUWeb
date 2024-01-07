@@ -352,6 +352,13 @@ article {
 article .icon {
   cursor: default;
 }
+/* SCHEDULE SECTION */
+
+#scheule{
+  position: relative;
+}
+
+
 
 /* PROJECTS SECTION */
 

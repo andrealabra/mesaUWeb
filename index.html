@@ -294,125 +294,147 @@
         <h1> Itinerary.</h1>
       </div>
       
+
+      <nav id="desktop-nav">
+        <div class="logo">
+            <img
+              src="./assets/mesaLogo.png"
+              alt="Mesa Logo"
+              class="icon"
+              onclick="location.href='https:'//sites.google.com/csueastbay.edu/csu-east-bay-mesa-college-prep/home'"
+            />
+  
+        </div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#apply">Apply</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+  
+  
+      <nav id="schedule-timeline">
+        <div class="t">
+          <script>
+            const canvas = document.getElementById("myCanvas");
+            const ctx = canvas. getContext("2d");
       
-    <canvas id="myCanvas" width="1505" height="2000" style="border:1px solid grey;"></canvas>
-    <script>
-     const canvas = document.getElementById("myCanvas");
-     const ctx = canvas. getContext("2d");
-     
-     ctx.beginPath();
+            ctx.beginPath();
+  
+            ctx.moveTo(1000,0);
+  
+            ctx.lineTo(1000,700);
+            ctx.lineWidth = 5;
+            ctx.lineCap = "round";
+            ctx.stroke();
+  
+            ctx.beginPath();
+            ctx.moveTo(1000,700);
+       
+            ctx.lineTo(550,700);
+            ctx.lineWidth = 5;
+            ctx.lineCap = "round";
+            ctx.stroke();
+  
+          </script>
+  
+  
+  
+  <!-- Friday Agenda -->
+          <table id="friday-schedule-details">
+            <tr>
+              <th style="width:15%">    College/University Students    </th>
+              <th style="width:15%">    Time </th>
+              <th style="width:15%">    Middle and High Students    </th>
+            </tr>
+            <tr>
+              <td style="width:15%"> Row 1 </td>
+              <td style="width:15%"> Row 2 </td>
+              <td style="width:15%"> Virtual Late Afternoon Kick-off </td>
+            </tr>
+            <tr>
+              <td> Row 1 </td>
+              <td> Row 2 </td>
+              <td> N/A  </td>
+            </tr>
+          </table>
+  
 
-     ctx.moveTo(1000,0);
+  <!-- Saturday Agenda -->
+          <table id="saturday-schedule-details">
+            <tr>
+              <th> College/University Students </th>
+              <th> Time </th>
+              <th> Middle and High Students </th>
+            </tr>
+            <tr>
+              <td>    Row 1    </td>
+              <td>    8am    </td>
+              <td>    MS & HS Guest Arrive    </td>
+            </tr>
+            <tr>
+              <td>     Row 1    </td>
+              <td>     8am - 8:45am    </td>
+              <td>     Breakfast (Food Description: TBD)     </td>
+            </tr>
+            <tr>
+              <th>    Kick-Off    </th>
+              <th>    8:45am - 9:15am    </th>
+              <th>    Opening Remarks    </th>
+            </tr>
+            <tr>
+              <th>     Row 1     </th>
+              <th>     9:15am -  </th>
+              <th>     Row 3     </th>
+            </tr>
+            <tr>
+              <th>     Row 1    </th>
+              <th>     4pm      </th>
+              <th>     MS and HS Guest Dismissed  </th>
+            </tr>
+          </table>
+  
+  
+  <!-- Sunday Agenda -->
+          <table id="sunday-schedule-details">
+            <tr>
+              <th> College/University Students </th>
+              <th> Time </th>
+              <th> Middle and High Students </th>
+            </tr>
+            <tr>
+              <td>Row 1 </td>
+              <td>Row 2 </td>
+              <td>    Virtual Close Out    </td>
+            </tr>
+            <tr>
+              <td>Row 1 </td>
+              <td>Row 2 </td>
+              <td>Row 3  </td>
+            </tr>
+          </table>
+  
+  
+  <!-- Friday rounded square -->
+        <svg width= "1600" height="600">
+          <rect x="5" y="20" rx="60" width="500" height="300" style="fill:orange;stroke:red;stroke-width:5;opacity:0.5"/>
+  
+  
+  <!-- Saturday rounded square -->
+          <rect x="550" y="20" rx="60" width="500" height="300" style="fill:orange;stroke:red;stroke-width:5;opacity:0.5"/>
+        </svg>  
+  
+  
+   <!-- Sunday rounded Square --> 
+        <svg width= "600" height="600">
+          <rect x="5" y="20" rx="60" width="500" height="300" style="fill:orange;stroke:red;stroke-width:5;opacity:0.5"/>
+        </svg>
 
-     ctx.lineTo(1000,700);
-     ctx.lineWidth = 5;
-     ctx.lineCap = "round";
-     ctx.stroke();
-
-     ctx.beginPath();
-     ctx.moveTo(1000,700);
-     
-     ctx.lineTo(550,700);
-     ctx.lineWidth = 5;
-     ctx.lineCap = "round";
-     ctx.stroke();
-
-    </script>
-
-
-
-<!-- Friday Agenda -->
-      <table>
-        <tr>
-          <th>    College/University Students    </th>
-          <th>    Time </th>
-          <th>    Middle and High Students    </th>
-        </tr>
-        <tr>
-          <td> Row 1 </td>
-          <td> Row 2 </td>
-          <td> Virtual Late Afternoon Kick-off </td>
-        </tr>
-        <tr>
-          <td> Row 1 </td>
-          <td> Row 2 </td>
-          <td> N/A  </td>
-        </tr>
-      </table>
-   
-
-
-<!-- Saturday Agenda -->
-      <table>
-        <tr>
-          <th> College/University Students </th>
-          <th> Time </th>
-          <th> Middle and High Students </th>
-        </tr>
-        <tr>
-          <td>    Row 1    </td>
-          <td>    8am    </td>
-          <td>    MS & HS Guest Arrive    </td>
-        </tr>
-        <tr>
-          <td>     Row 1    </td>
-          <td>     8am - 8:45am    </td>
-          <td>     Breakfast (Food Description: TBD)     </td>
-        </tr>
-        <tr>
-          <th>    Kick-Off    </th>
-          <th>    8:45am - 9:15am    </th>
-          <th>    Opening Remarks    </th>
-        </tr>
-        <tr>
-          <th>     Row 1     </th>
-          <th>     9:15am -  </th>
-          <th>     Row 3     </th>
-        </tr>
-        <tr>
-          <th>     Row 1    </th>
-          <th>     4pm      </th>
-          <th>     MS and HS Guest Dismissed  </th>
-        </tr>
-      </table>
-
-
-<!-- Sunday Agenda -->
-      <table>
-        <tr>
-          <th> College/University Students </th>
-          <th> Time </th>
-          <th> Middle and High Students </th>
-        </tr>
-        <tr>
-          <td>Row 1 </td>
-          <td>Row 2 </td>
-          <td>    Virtual Close Out    </td>
-        </tr>
-        <tr>
-          <td>Row 1 </td>
-          <td>Row 2 </td>
-          <td>Row 3  </td>
-        </tr>
-      </table>
-
-
-<!-- Friday rounded square -->
-   <svg width= "1600" height="600">
-     <rect x="5" y="20" rx="60" width="500" height="300" style="fill:orange;stroke:red;stroke-width:5;opacity:0.5"/>
-
-
-<!-- Saturday rounded square -->
-     <rect x="550" y="20" rx="60" width="500" height="300" style="fill:orange;stroke:red;stroke-width:5;opacity:0.5"/>
-   </svg>  
-
-
- <!-- Sunday rounded Square --> 
-   <svg width= "600" height="600">
-     <rect x="5" y="20" rx="60" width="500" height="300" style="fill:orange;stroke:red;stroke-width:5;opacity:0.5"/>
-   </svg>
-
-   
+     </div>
+     </nav>
     </section>
 
 
@@ -531,7 +553,7 @@
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#apply">Apply</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#schedule">Schedule</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
