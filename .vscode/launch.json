@@ -8,7 +8,8 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open index.html",
-            "file": "/Users/andrealabraorozco/Desktop/mesaUWeb/index.html"
+            "url": "C:\Users\ricom\source\repos\mesaUWeb",
+            //"webRoot": "${workspaceFolder}"
         }
     ]
 }

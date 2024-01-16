@@ -354,16 +354,44 @@ article .icon {
 }
 /* SCHEDULE SECTION */
 
-#scheule{
-  position: relative;
+#schedule{
+  color: black;
+        padding: 40px;
+        text-align: center;
+        width:auto;
+        font-size: x-large;
+        
 }
 
+.color-container {
+  border-color: rgb(163,163,163);
+  background: rgb(250, 250, 250);
+}
 
+.timeline{
+  border-spacing:20px;
+  display:flex;
+  flex-direction: column;
+  font-size:xx-large;
+}
+.schedule-subheading{
+  
+}
+.friday-details{
+  
+}
+.saturday-details{
+  
+}
 
 /* PROJECTS SECTION */
 
 #projects {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+  
 }
 
 .color-container {

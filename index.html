@@ -43,7 +43,7 @@
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#apply" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Schedule</a></li>
+          <li><a href="#schedule" onclick="toggleMenu()">Schedule</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
@@ -289,241 +289,134 @@
       />
 
     </section>
-    <section id="schedule">
-      <div class="Heading">
-        <h1> Itinerary.</h1>
-      </div>
-      
 
-      <nav id="desktop-nav">
-        <div class="logo">
-            <img
-              src="./assets/mesaLogo.png"
-              alt="Mesa Logo"
-              class="icon"
-              onclick="location.href='https:'//sites.google.com/csueastbay.edu/csu-east-bay-mesa-college-prep/home'"
-            />
+
+    <section id="schedule">
+      <p class="section__text__p3">Keep track of whats going on.</p>
+      <div class="schedule-subheading">
+        <h1> Schedule</h1>
+      </div>
   
-        </div>
-        <div>
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#apply">Apply</a></li>
-            <li><a href="#schedule">Schedule</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-  
-  
-      <nav id="schedule-timeline">
-        <div class="t">
-          <script>
-            const canvas = document.getElementById("myCanvas");
-            const ctx = canvas. getContext("2d");
-      
-            ctx.beginPath();
-  
-            ctx.moveTo(1000,0);
-  
-            ctx.lineTo(1000,700);
-            ctx.lineWidth = 5;
-            ctx.lineCap = "round";
-            ctx.stroke();
-  
-            ctx.beginPath();
-            ctx.moveTo(1000,700);
-       
-            ctx.lineTo(550,700);
-            ctx.lineWidth = 5;
-            ctx.lineCap = "round";
-            ctx.stroke();
-  
-          </script>
-  
-  
-  
+      <div class="timeline">
   <!-- Friday Agenda -->
-          <table id="friday-schedule-details">
-            <tr>
-              <th style="width:15%">    College/University Students    </th>
-              <th style="width:15%">    Time </th>
-              <th style="width:15%">    Middle and High Students    </th>
+          <table class="friday-details", style="width:100%">
+            <tr style="height:70px">
+              <th style="width:30%">    Events    </th>
+              <th style="width:30%">    Time </th>
             </tr>
-            <tr>
-              <td style="width:15%"> Row 1 </td>
-              <td style="width:15%"> Row 2 </td>
-              <td style="width:15%"> Virtual Late Afternoon Kick-off </td>
+            <tr style="height:40px">
+              <td style="width:30%"> Virtual Late Afternoon Kick-off </td>
+              <td style="width:30%"> 4pm </td>
             </tr>
-            <tr>
-              <td> Row 1 </td>
-              <td> Row 2 </td>
-              <td> N/A  </td>
+            <tr style="height:70px">
+              <td> Event info </td>
+              <td> Time </td>
             </tr>
           </table>
   
-
+      
   <!-- Saturday Agenda -->
-          <table id="saturday-schedule-details">
-            <tr>
-              <th> College/University Students </th>
-              <th> Time </th>
-              <th> Middle and High Students </th>
+          <table class="saturday-details", style="width:100%">
+            <tr style="height:70px">
+              <th style="width:30%"> Events </th>
+              <th style="width:30%"> Time </th>
             </tr>
             <tr>
-              <td>    Row 1    </td>
-              <td>    8am    </td>
               <td>    MS & HS Guest Arrive    </td>
+              <td>    8am    </td>
             </tr>
             <tr>
-              <td>     Row 1    </td>
+              <td>     Breakfast (Food Description: TBD)    </td>
               <td>     8am - 8:45am    </td>
-              <td>     Breakfast (Food Description: TBD)     </td>
             </tr>
             <tr>
-              <th>    Kick-Off    </th>
-              <th>    8:45am - 9:15am    </th>
-              <th>    Opening Remarks    </th>
+              <td>    Mesa directors speech   </td>
+              <td>    8:45am - 8:50am    </td>
             </tr>
             <tr>
-              <th>     Row 1     </th>
-              <th>     9:15am -  </th>
-              <th>     Row 3     </th>
+              <td>     Meet the Committee     </td>
+              <td>     8:50 - 9:00  </td>
             </tr>
             <tr>
-              <th>     Row 1    </th>
-              <th>     4pm      </th>
-              <th>     MS and HS Guest Dismissed  </th>
+              <td>     Announcing upcoming workshops/Speakers    </td>
+              <td>     9:00am - 9:15am     </td>
+            </tr>
+            <tr>
+              <td>     Break    </td>
+              <td>     9:15am - 9:30am  </td>
+            </tr>
+            <tr>
+              <td>     Workshop 1 info    </td>
+              <td>     9:30 - 10:30am     </td>
+            </tr>
+            <tr>
+              <td>      Intermission   </td>
+              <td>      10:30am - 11:15am   </td>
+            </tr>
+            <tr>
+              <td>      Workshop 2 info   </td>
+              <td>      11:15 - 12:15   </td>
+            </tr>
+            <tr>
+              <td>      Row 1   </td>
+              <td>      12:15 - 12:30   </td>
+            </tr>
+            <tr>
+              <td>      Lunch & Keynote Speaker   </td>
+              <td>      12:30 - 1:30   </td>
+            </tr>
+            <tr>
+              <td>      Workshop 3 info   </td>
+              <td>      1:45 - 2:45   </td>
+            </tr>
+            <tr>
+              <td>      MS & HS Guest Campus Tour   </td>
+              <td>      3:00 - 3:40   </td>
+            </tr>
+            <tr>
+              <td>      Outro for MS & HS Guest   </td>
+              <td>      3:50 - 4:00   </td>
             </tr>
           </table>
   
   
   <!-- Sunday Agenda -->
-          <table id="sunday-schedule-details">
+          <table class="sunday-schedule-details", style="width:100%">
             <tr>
-              <th> College/University Students </th>
+              <th> Events </th>
               <th> Time </th>
-              <th> Middle and High Students </th>
+            </tr>
+            <tr>
+              <td> Virtual Close Out </td>
+              <td> 8am </td>
             </tr>
             <tr>
               <td>Row 1 </td>
-              <td>Row 2 </td>
-              <td>    Virtual Close Out    </td>
-            </tr>
-            <tr>
-              <td>Row 1 </td>
-              <td>Row 2 </td>
-              <td>Row 3  </td>
+              <td> 9am </td>
             </tr>
           </table>
-  
-  
-  <!-- Friday rounded square -->
+    
+  <!--
+   Friday rounded square 
         <svg width= "1600" height="600">
           <rect x="5" y="20" rx="60" width="500" height="300" style="fill:orange;stroke:red;stroke-width:5;opacity:0.5"/>
   
   
-  <!-- Saturday rounded square -->
+  Saturday rounded square 
           <rect x="550" y="20" rx="60" width="500" height="300" style="fill:orange;stroke:red;stroke-width:5;opacity:0.5"/>
         </svg>  
   
   
-   <!-- Sunday rounded Square --> 
+    Sunday rounded Square 
         <svg width= "600" height="600">
           <rect x="5" y="20" rx="60" width="500" height="300" style="fill:orange;stroke:red;stroke-width:5;opacity:0.5"/>
         </svg>
-
+  -->
      </div>
-     </nav>
     </section>
 
 
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
+
 
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
