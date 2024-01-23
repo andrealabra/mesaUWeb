@@ -243,16 +243,36 @@ section#apply {
 .section__text p {
   font-weight: 50;
 }
-
 .section__text__p1 {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
   margin-bottom: 0rem;
+  color: #a33535eb; /* Change this to the desired text color */
 }
 
+.section__text__p1::after {
+  content: ''; /* Adding a pseudo-element for the border */
+  display: block;
+  width: 100%;
+  height: 1px; /* Set the desired border height */
+  background-color: #407040c9; /* Change this to the desired border color */
+  margin-top: 10px; /* Adjust the margin as needed */
+}
 .section__text__p2 {
-  font-size: 1.5rem;
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 2rem;
   margin-bottom: 2.5rem;
+  color: #a33535eb;
+}
+.section__text__p2::before {
+  content: ''; /* Adding a pseudo-element for the border */
+  display: block;
+  width: 100%;
+  height: 1px; /* Set the desired border height */
+  background-color: #407040c9; /* Change this to the desired border color */
+  margin-top: 10px; /* Adjust the margin as needed */
 }
 
 .concept-two {
@@ -349,12 +369,12 @@ h1 {
 
 .btn-color-1,
 .btn-color-2:hover {
-  background: rgb(53, 53, 53);
+  background: rgb(40, 32, 32);
   color: white;
 }
 
 .btn-color-1:hover {
-  background: rgb(155, 149, 149);
+  background: rgb(127, 61, 61);
 }
 
 .btn-color-2 {
