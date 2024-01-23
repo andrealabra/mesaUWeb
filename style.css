@@ -199,8 +199,11 @@ section#apply {
 .section__pic-container {
   display: flex;
   height: 600px;
-  width: 600px;
-  margin: auto 0;
+  width: 700px;
+  margin: auto;
+  padding-bottom: 2rem;
+  padding-right: 10rem;
+  padding-left: 0rem;
   position: relative; /* Added position relative for absolute positioning */
 }
 
@@ -209,8 +212,10 @@ section#apply {
   width: 100%; /* Make sure the image takes the full width of the container */
   height: auto; /* Maintain aspect ratio */
   position: absolute;
-  bottom: 0;
-  animation: float 3s ease-in-out infinite;
+  bottom: 4;
+  margin-left:0;
+  margin-right: 25px;
+  animation: float 4s ease-in-out infinite;
 }
 
 @keyframes float {
@@ -218,7 +223,7 @@ section#apply {
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(-20px);
+    transform: translateY(-30px);
   }
   100% {
     transform: translateY(0px);
@@ -231,22 +236,26 @@ section#apply {
 }
 
 .section__text p {
-  font-weight: 400;
+  font-weight: 50;
 }
 
 .section__text__p1 {
   text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 0rem;
 }
 
 .section__text__p2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .concept-two {
   display: flex;
+  font-size: 3.5rem;
   justify-content: center;
-  padding: 1em 1em;
+  padding: 0em 0em;
+  margin-bottom: 0rem;
 }
 
 .hover {
@@ -265,10 +274,10 @@ h1 {
 }
 
 .hover:hover h1 {
-  transform: scale(1.5);
+  transform: scale(1.8);
   color: #fff;
   -webkit-text-stroke: 2px transparent;
-  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 10px 20px rgba(82, 55, 55, 0.2);
 }
 
 
