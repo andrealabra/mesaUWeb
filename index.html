@@ -51,54 +51,51 @@
     </nav>
 
 
+   
     <section id="profile">
       <div class="section__pic-container">
         <img src="./assets/drawing.png" alt="MESA U Hacks Logo" />
       </div>
+    
       <div class="section__text">
         <h1 class="section__text__p1">Hello Welcome To,</h1>
-        <h1 class="title">MESA U</h1>
+        <div class="concept concept-two">
+          <div class="hover">
+            <h1>M</h1>
+          </div>
+          <div class="hover">
+            <h1>E</h1>
+          </div>
+          <div class="hover">
+            <h1>S</h1>
+          </div>
+          <div class="hover">
+            <h1>A</h1>
+          </div>
+          <div class="hover">
+            <h1>U</h1>
+          </div>
+        </div>
         <h1 class="section__text__p2">Hacks</h1>
-
+    
         <div class="btn-container">
-          <button
-             class="btn btn-color-1" onclick="scrollToApply()">
-              APPLY
+          <button class="btn btn-color-1" onclick="scrollToApply()">
+            APPLY
           </button>
           <!-- JavaScript function to scroll to the contact section -->
           <script>
-              function scrollToContact() {
-                // Get the element with the ID "contact"
-                  var contactSection = document.getElementById('apply');
-                  // Check if the element exists
-                  if (contactSection) {
-                     // Scroll to the "contact" section with a smooth behavior
-                      contactSection.scrollIntoView({ behavior: 'smooth' });
-                  }
+            function scrollToApply() {
+              // Get the element with the ID "apply"
+              var applySection = document.getElementById('apply');
+              // Check if the element exists
+              if (applySection) {
+                // Scroll to the "apply" section with a smooth behavior
+                applySection.scrollIntoView({ behavior: 'smooth' });
               }
-          </script>
-          > 
-        </button>
-
-
-           <!-- Button to scroll to the contact section -->
-          <button class="btn btn-color-1" onclick="scrollToContact()">
-            CONTACT US
-        </button>
-        <!-- JavaScript function to scroll to the contact section -->
-        <script>
-            function scrollToContact() {
-              // Get the element with the ID "contact"
-                var contactSection = document.getElementById('contact');
-                // Check if the element exists
-                if (contactSection) {
-                   // Scroll to the "contact" section with a smooth behavior
-                    contactSection.scrollIntoView({ behavior: 'smooth' });
-                }
             }
-        </script>
+          </script>
         </div>
-
+    
         <div id="socials-container">
           <img
             src="./assets/linkedin.png"
@@ -106,23 +103,17 @@
             class="icon"
             onclick="location.href='https://linkedin.com/'"
           />
-
+    
           <img
-            src="./assets/inst.png"
+            src="./assets/22.png"
             alt="Instagram"
-            class="icon"
+            class="icon1"
             onclick="location.href='https://github.com/'"
           />
-
         </div>
-
       </div>
     </section>
-
-
-
-
-
+    
 
 
 
