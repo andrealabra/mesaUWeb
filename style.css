@@ -14,15 +14,15 @@ body {
 font-family: "Poppins", sans-serif;
 background: linear-gradient(to right, 
   #1e579984 0%, 
-  #2ce0bf87 15%,   /* Adjusted color stop */
-  #76dd2c81 30%,   /* Adjusted color stop */
-  #dba62b8d 45%,   /* Adjusted color stop */
+  #2ce0bf87 8%,   /* Adjusted color stop */
+  #76dd2c81 25%,   /* Adjusted color stop */
+  #dba62b8d 40%,   /* Adjusted color stop */
   #e02cbf8f 60%,   /* Adjusted color stop */
   #1e5799 75%,     /* Adjusted color stop */
   #1e579984 100%   /* Repetition of the first color for smooth transition */
 );
-background-size: 10000px 100%;
-animation: bg 15s linear infinite;
+background-size: 1000% 100%;
+animation: bg 20s linear infinite;
 }
 
 @keyframes bg {
@@ -82,8 +82,13 @@ a:hover {
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 5rem;
 }
+
+#desktop-nav .logo img {
+  width: 150px; height: 75px;
+}
+
 
 .logo:hover {
   cursor: default;
@@ -172,7 +177,6 @@ a:hover {
 /* SECTIONS */
 
 section:not(#apply) {
-  padding-top: 10px;
   height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
@@ -180,7 +184,7 @@ section:not(#apply) {
 }
 
 section#apply {
-  margin: 5rem 10rem;
+  margin: 4rem 8rem;
 }
 
 .section-container {
@@ -209,6 +213,7 @@ section#apply {
 
 /* Add styles for the levitating effect */
 .section__pic-container img {
+  filter: drop-shadow(0 0 0.75rem rgba(156, 154, 155, 0.189));
   width: 100%; /* Make sure the image takes the full width of the container */
   height: auto; /* Maintain aspect ratio */
   position: absolute;
@@ -282,7 +287,7 @@ h1 {
 
 
 .title {
-  font-size: 5rem;
+  font-size: 4rem;
   text-align: center;
   position: relative;
   color: #fff; 
@@ -417,18 +422,19 @@ h1 {
 }
 
 .section__pic-container {
-  height: 400px;
-  width: 400px;
+  height: 600px;
+  width: 600px;
+  align-items: normal;
   margin: auto 0;
 }
 
 /* apply */
 .bounce-top {
-  animation: bounce-top 0.9s both;
+  animation: bounce-top 0.15s both;
 }
 
 #apply {
-  animation: color-change-2x 2s infinite alternate;
+  animation: color-change-2x 3s infinite alternate;
 }
 
 
