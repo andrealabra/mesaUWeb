@@ -33,10 +33,6 @@ animation: bg 20s linear infinite;
     background-position-x: 10000px;
   }
 }
- 
-
-
-}
 
 html {
   scroll-behavior: smooth;
@@ -82,7 +78,7 @@ a:hover {
   color: grey;
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  text-decoration-color: rgb(190, 100, 100);
 }
 
 .logo {
@@ -181,7 +177,6 @@ a:hover {
 /* SECTIONS */
 
 section:not(#apply) {
-  padding-top: 2vh;
   height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
@@ -207,9 +202,12 @@ section#apply {
 
 .section__pic-container {
   display: flex;
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
+  height: 600px;
+  width: 700px;
+  margin: auto;
+  padding-bottom: 2rem;
+  padding-right: 10rem;
+  padding-left: 0rem;
   position: relative; /* Added position relative for absolute positioning */
 }
 
@@ -219,8 +217,10 @@ section#apply {
   width: 100%; /* Make sure the image takes the full width of the container */
   height: auto; /* Maintain aspect ratio */
   position: absolute;
-  bottom: 0;
-  animation: float 3s ease-in-out infinite;
+  bottom: 4;
+  margin-left:0;
+  margin-right: 25px;
+  animation: float 4s ease-in-out infinite;
 }
 
 @keyframes float {
@@ -228,14 +228,12 @@ section#apply {
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(-20px);
+    transform: translateY(-30px);
   }
   100% {
     transform: translateY(0px);
   }
 }
-
-
 
 .section__text {
   align-self: center;
@@ -243,17 +241,50 @@ section#apply {
 }
 
 .section__text p {
-  font-weight: 600;
+  font-weight: 50;
 }
 
 .section__text__p1 {
   text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 0rem;
 }
 
 .section__text__p2 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
 }
+
+.concept-two {
+  display: flex;
+  font-size: 3.5rem;
+  justify-content: center;
+  padding: 0em 0em;
+  margin-bottom: 0rem;
+}
+
+.hover {
+  position: relative;
+  margin: 5% 0 /* Adjust the margin as needed */
+  scale(1.2);
+
+}
+
+h1 {
+  color: transparent;
+  text-align: 0 1px 1px;
+  -webkit-text-stroke: 2px #fff;
+  text-shadow: none;
+  transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hover:hover h1 {
+  transform: scale(1.8);
+  color: #fff;
+  -webkit-text-stroke: 2px transparent;
+  text-shadow: 0 10px 20px rgba(82, 55, 55, 0.2);
+}
+
 
 .title {
   font-size: 4rem;
@@ -267,10 +298,6 @@ section#apply {
   transform: scale(1.5);
   text-shadow: 0 10px 20px rgba(144, 136, 136, 0.2);
 }
-
-
-
-
 
 
 
@@ -289,10 +316,15 @@ section#apply {
   height: 2rem;
 }
 
+.icon1 {
+  cursor: pointer;
+  height: 2.1rem;
+}
+
 /* BUTTONS */
 
 .btn-container {
-  display: flex;
+  display: block;
   justify-content: center;
   gap: 1rem;
 }
@@ -334,7 +366,7 @@ section#apply {
 }
 
 .btn-container {
-  gap: 1rem;
+  gap: 10%;
 }
 
 
