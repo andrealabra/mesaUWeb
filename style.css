@@ -33,10 +33,6 @@ animation: bg 15s linear infinite;
     background-position-x: 10000px;
   }
 }
- 
-
-
-}
 
 html {
   scroll-behavior: smooth;
@@ -82,7 +78,7 @@ a:hover {
   color: grey;
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  text-decoration-color: rgb(190, 100, 100);
 }
 
 .logo {
@@ -176,7 +172,7 @@ a:hover {
 /* SECTIONS */
 
 section:not(#apply) {
-  padding-top: 4vh;
+  padding-top: 10px;
   height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
@@ -202,8 +198,8 @@ section#apply {
 
 .section__pic-container {
   display: flex;
-  height: 400px;
-  width: 400px;
+  height: 600px;
+  width: 600px;
   margin: auto 0;
   position: relative; /* Added position relative for absolute positioning */
 }
@@ -229,15 +225,13 @@ section#apply {
   }
 }
 
-
-
 .section__text {
   align-self: center;
   text-align: center;
 }
 
 .section__text p {
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .section__text__p1 {
@@ -245,9 +239,38 @@ section#apply {
 }
 
 .section__text__p2 {
-  font-size: 1.75rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
+
+.concept-two {
+  display: flex;
+  justify-content: center;
+  padding: 1em 1em;
+}
+
+.hover {
+  position: relative;
+  margin: 5% 0 /* Adjust the margin as needed */
+  scale(1.2);
+
+}
+
+h1 {
+  color: transparent;
+  text-align: 0 1px 1px;
+  -webkit-text-stroke: 2px #fff;
+  text-shadow: none;
+  transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hover:hover h1 {
+  transform: scale(1.5);
+  color: #fff;
+  -webkit-text-stroke: 2px transparent;
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 
 .title {
   font-size: 5rem;
@@ -261,10 +284,6 @@ section#apply {
   transform: scale(1.5);
   text-shadow: 0 10px 20px rgba(144, 136, 136, 0.2);
 }
-
-
-
-
 
 
 
@@ -283,10 +302,15 @@ section#apply {
   height: 2rem;
 }
 
+.icon1 {
+  cursor: pointer;
+  height: 2.1rem;
+}
+
 /* BUTTONS */
 
 .btn-container {
-  display: flex;
+  display: block;
   justify-content: center;
   gap: 1rem;
 }
@@ -328,7 +352,7 @@ section#apply {
 }
 
 .btn-container {
-  gap: 1rem;
+  gap: 10%;
 }
 
 
