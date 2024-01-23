@@ -17,7 +17,7 @@
             src="./assets/mesaLogo.png"
             alt="Mesa Logo"
             class="icon"
-            onclick="location.href='https:https://sites.google.com/csueastbay.edu/csu-east-bay-mesa-college-prep/home'"
+            onclick="location.href='https://mesa.ucop.edu'"
           />
       </div>
 
@@ -42,9 +42,9 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#apply" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#schedule" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#team-section" onclick="toggleMenu()">Team </a></li>
+          <li><a href="#apply" onclick="toggleMenu()">Apply</a></li>
+          <li><a href="#schedule" onclick="toggleMenu()">Schedule</a></li>
+          <li><a href="#team-section" onclick="toggleMenu()">Team</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
@@ -53,24 +53,23 @@
 
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/logo.png" alt="MESA U Hacks Logo" />
+        <img src="./assets/drawing.png" alt="MESA U Hacks Logo" />
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Hello Welcome To,</p>
+        <h1 class="section__text__p1">Hello Welcome To,</h1>
         <h1 class="title">MESA U</h1>
-        <p class="section__text__p2">Hacks</p>
+        <h1 class="section__text__p2">Hacks</h1>
+
         <div class="btn-container">
           <button
-            class="btn btn-color-2"
-            onclick="window.open('./')"
-             class="btn btn-color-1" onclick="scrollToContact()">
-              Contact Info
+             class="btn btn-color-1" onclick="scrollToApply()">
+              APPLY
           </button>
           <!-- JavaScript function to scroll to the contact section -->
           <script>
               function scrollToContact() {
                 // Get the element with the ID "contact"
-                  var contactSection = document.getElementById('contact');
+                  var contactSection = document.getElementById('apply');
                   // Check if the element exists
                   if (contactSection) {
                      // Scroll to the "contact" section with a smooth behavior
@@ -78,14 +77,13 @@
                   }
               }
           </script>
-          >
-            
-          </button>
+          > 
+        </button>
 
 
            <!-- Button to scroll to the contact section -->
           <button class="btn btn-color-1" onclick="scrollToContact()">
-            Contact Info
+            CONTACT US
         </button>
         <!-- JavaScript function to scroll to the contact section -->
         <script>
@@ -100,6 +98,7 @@
             }
         </script>
         </div>
+
         <div id="socials-container">
           <img
             src="./assets/linkedin.png"
@@ -107,54 +106,49 @@
             class="icon"
             onclick="location.href='https://linkedin.com/'"
           />
+
           <img
-            src="./assets/github.png"
-            alt="My Github profile"
+            src="./assets/inst.png"
+            alt="Instagram"
             class="icon"
             onclick="location.href='https://github.com/'"
           />
+
         </div>
+
       </div>
     </section>
 
 
+
+
+
+
+
+
+  <section id="about">
+      <div class="section-wrapper">
+        <div class="section-body">
+          <header>
+            <h1>Come Hack with Us <img class="emoji" src="assets/emoji/sunglasses.png" alt="Sunglasses emoji"></h1>
+          </header>
+          <p>A hackathon is where your crazy ideas become reality. Build something: an app, a website, a game, a Slackbot, <em>anything</em>. The possibilities are limitless. Do something you've never done before. Move quickly—you only have 36 hours! Grab your breadboards, charge your laptops, and put on your Oculi. Let's HACK!</p>
+          <h2>Location</h2>
+          <p>MESA U HACKS will take place at <a href="https://www.csueastbay.edu/about/visitor-information/hayward-campus-map.html">California State University East Bay</a>, in Hayward Campus. The address is: <a href="https://www.google.com/maps/place/California+State+University,+East+Bay/@37.6566086,-122.0571725,17z/data=!4m10!1m2!2m1!1scsueb+address!3m6!1s0x808f938a2a66cb0f:0x6e8f52a8e9002934!8m2!3d37.6560295!4d-122.0561984!15sCg1jc3VlYiBhZGRyZXNzIgJIAZIBEXB1YmxpY191bml2ZXJzaXR54AEA!16zL20vMDJrMHBu?entry=ttu">25800 Carlos Bee Blvd, Hayward, CA 94542</a></p>
+          <p>See you there :)</p>
+        </div>
+      </div>
+      <div class="slant bottom left"></div>
+  </section> 
     
-    <section id="about">
-      <div id="about" class="section">
-        <div class="section-wrapper">
-            <div class="section-body">
-                <h1>Come Hack with Us <img class='emoji' src="assets/emoji/sunglasses.png"></h1>
-                <p>A hackathon is where your crazy ideas become reality. Build something: an app, 
-                  a website, a game, a Slackbot, <em>anything</em>. The possibilities are limitless. 
-                  Do something you've never done before. 
-                  Move quickly&mdash;you only have 36 hours! Grab your breadboards, 
-                  charge your laptops, and put on your Oculi. Let's HACK!</p>
 
-                <h1>Location</h1>
-                <p>
 
-                    MESA U HACKS  will take place at <a href="https://www.csueastbay.edu/about/visitor-information/hayward-campus-map.html">California State University East Bay </a>, in Hayward Campus. The address is: <a href="https://www.google.com/maps/place/California+State+University,+East+Bay/@37.6566086,-122.0571725,17z/data=!4m10!1m2!2m1!1scsueb+address!3m6!1s0x808f938a2a66cb0f:0x6e8f52a8e9002934!8m2!3d37.6560295!4d-122.0561984!15sCg1jc3VlYiBhZGRyZXNzIgJIAZIBEXB1YmxpY191bml2ZXJzaXR54AEA!16zL20vMDJrMHBu?entry=ttu">25800 Carlos Bee Blvd, Hayward, CA 94542</a>
-
-                    <br><br>
-
-                    See you there :)
-
-                </p>
-            </div>
-        </div>
-        <div class="slant bottom left"></div>
+  <section id="apply" class="bounce-top">
+    <div class="title">
+      <div data-tf-live="01HJVFQQR8567C2KE4FPXSTC9F"></div>
+      <script src="https://embed.typeform.com/next/embed.js"></script>
     </div>
-
-    </section>
-
-    <section id="apply">
-      <section id="apply">
-        <div class="title">
-          <div data-tf-live="01HJVFQQR8567C2KE4FPXSTC9F"></div>
-          <script src="https://embed.typeform.com/next/embed.js"></script>
-        </div>
-      </section>
-    </section>
+  </section>
 
 
 
@@ -329,7 +323,7 @@
 
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
+      <h1 class="title">Contact Us</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
@@ -349,6 +343,11 @@
         </div>
       </div>
     </section>
+
+
+
+
+
     <footer>
       <nav>
         <div class="nav-links-container">
