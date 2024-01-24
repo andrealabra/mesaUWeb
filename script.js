@@ -68,3 +68,18 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
+// JavaScript code to handle the scroll event about 
+document.addEventListener("scroll", function () {
+  var aboutSection = document.getElementById("about");
+  var scrollPosition = window.scrollY;
+
+  // Adjust the threshold value based on your design
+  var threshold = 100;
+
+  // Check if the scroll position is below the threshold
+  if (scrollPosition > threshold) {
+    aboutSection.classList.add("fixed-about");
+  } else {
+    aboutSection.classList.remove("fixed-about");
+  }
+});
