@@ -526,6 +526,41 @@ h1 {
   height: 2.5rem;
 }
 
+.section__pic1-container {
+  display: flex;
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  padding-bottom: 2rem;
+  padding-right: 10rem;
+  padding-left: 0rem;
+  position: relative; /* Added position relative for absolute positioning */
+}
+
+/* Add styles for the levitating effect */
+.section__pic1-container img {
+  filter: drop-shadow(0 0 0.75rem rgba(19, 17, 18, 0.736));
+  width: 100%; /* Make sure the image takes the full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  position: absolute;
+  bottom: 4;
+  margin-left:0;
+  margin-right: 25px;
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 
 
 /* FOOTER SECTION */
