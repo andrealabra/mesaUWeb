@@ -76,10 +76,10 @@ a {
 }
 
 a:hover {
-  color: grey;
+  color: #7F3D3D;
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(111, 106, 106);
+  text-decoration-color: rgb(62, 42, 42);
 }
 
 .logo {
@@ -395,11 +395,51 @@ h1 {
 
 
 
-
 /* ABOUT SECTION */
 #about {
   position: relative;
 }
+
+.section-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5%;
+}
+
+.section-body {
+  width: 45%;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.left-content {
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.section-image {
+  width: 45%;
+  overflow: hidden;
+}
+
+.section-image img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+
+.section-image:hover img {
+  transform: scale(1.1); /* Adjust the scale factor as needed */
+  border-radius: 20px; /* Adjust the border-radius for rounded corners on hover */
+}
+
+.slant.bottom.left {
+  bottom: -10px;
+}
+
 
 .about-containers {
   gap: 2rem;
@@ -426,7 +466,7 @@ h1 {
   padding-right: 10rem;
   padding-left: 0rem;
   position: relative; /* Added position relative for absolute positioning */
-}
+}*/
 
 
 
@@ -501,9 +541,6 @@ h1 {
   border-color: rgb(163, 163, 163);
 }
 
-
-
-
 /* CONTACT */
 
 #contact {
@@ -520,7 +557,7 @@ h1 {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   background: (250, 250, 250);
-  margin: 2rem auto;
+  margin: 1rem auto;
   padding: 0.5rem;
 }
 
@@ -561,10 +598,15 @@ h1 {
   width: 100%; /* Make sure the image takes the full width of the container */
   height: auto; /* Maintain aspect ratio */
   position: absolute;
-  bottom: 4;
+  bottom: 2;
   margin-left:0;
   margin-right: 25px;
   animation: float 5s ease-in-out infinite;
+}
+
+/* Move section__pic1-container below the contact information */
+.section__pic1-container {
+  order: 1; /* Set the order to 1 to move it below the contact information */
 }
 
 @keyframes float {
@@ -690,6 +732,8 @@ footer p {
   height: 100%;
   max-height: 900px;
 }
+
+
 
 .section-header {
   font-size: 36px;
