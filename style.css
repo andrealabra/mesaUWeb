@@ -355,36 +355,72 @@ article .icon {
 /* SCHEDULE SECTION */
 
 #schedule{
-  color: black;
-        padding: 40px;
-        text-align: center;
-        width:auto;
-        font-size: x-large;
-        
-}
-
-.color-container {
-  border-color: rgb(163,163,163);
-  background: rgb(250, 250, 250);
-}
-
-.timeline{
-  border-spacing:20px;
-  display:flex;
+  position: justify;  
   flex-direction: column;
-  font-size:xx-large;
+  background-color: beige; 
+  font-family: "Gaglin", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-bottom: 20%;
+  height:auto
+}
+
+.section__text__p3{
+  text-align: center;
+}
+.schedule-subheading{
+  border-color: #5c5c5c;
+  border-radius: 50px;
+  background-color:rgb(163,163,163) ;
+  color: #fffffe;
+  padding: 20px;
+  text-align:center;
+  text-shadow: 2px;
+  width: 50%;
+  font-size: xx-large;
+  gap:10rem;
+  margin-left:250px;
+  margin-bottom: 30px;
   
 }
 
-table{
-  width:100%;
+
+.friday-details{
+ margin-left: 400px;
+ width:80%;
+  
 }
-tr:nth-child(even){
-  background-color: bisque;
-  height: 70px;
+.saturday-details{
+  width:100%;
+  margin-left: -250px;
+}
+
+.sunday-details{
+  margin-left: 400px;
+}
+
+table{
+
+  border: 3px solid #737373;
+  border-radius: 5px;
+  gap:0.5rem;
+  text-transform: capitalize;
+  vertical-align: middle;
+  color:white;
+  background-color:#850D08;
+  text-align: center;
+  width:80%;
+  margin-bottom: 40px;
+   
+}
+td:hover{
+  background-color: grey;
+}
+tr{
+  
+  height: 50px;
 }
 th{
-  width:30%;
+  text-decoration-line:underline;
+  width:40px;
 }
 td{
   width:15%;
@@ -397,7 +433,7 @@ td{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 185vh;
+  height: 100vh;
 }
 
 .contact-info-upper-container {
@@ -411,13 +447,13 @@ td{
   padding: 0.5rem;
 }
 
-.contact-info-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 1rem;
-}
+  .contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+  }
 
 .contact-info-container p {
   font-size: larger;
