@@ -9,6 +9,8 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(#f1d2a0, #f7f7f7);
+
 }
 
 html {
@@ -360,6 +362,7 @@ article .icon {
   /*background-color: beige;*/ 
   margin-bottom: 20%;
   height:auto
+  
 }
 
 .designs{
@@ -378,9 +381,9 @@ article .icon {
   color: #fffffe;
   padding: 20px;
   text-align:center;
-  text-shadow: 2px;
+  text-decoration: underline;
   width: 50%;
-  font-size: xx-large;
+  font-size:xx-large;
   gap:10rem;
   margin-left:250px;
   margin-bottom: 30px;
@@ -410,7 +413,7 @@ table{
   text-transform: capitalize;
   vertical-align: middle;
   color:white;
-  background-color:#850D08;
+  background-color:#66251f;
   text-align: center;
   width:80%;
   margin-bottom: 40px;
@@ -429,7 +432,8 @@ th{
   width:40px;
 }
 td{
-  font-family:Jazz LET, fantasy;
+  
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, fantasy;
   width:15%;
 }
 
