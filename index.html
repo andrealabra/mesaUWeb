@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+  <head>     
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MESA U HACKS</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <link type="text/css" ref="stylesheet" href="location-of-style.css">
   </head>
 
   <body>
-
-    
     <nav id="desktop-nav">
       <div class="logo">
           <img
             src="./assets/mesaLogo.png"
             alt="Mesa Logo"
             class="icon"
-            onclick="location.href='https:https://sites.google.com/csueastbay.edu/csu-east-bay-mesa-college-prep/home'"
+            onclick="location.href='https://mesa.ucop.edu'"
           />
-
       </div>
 
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#apply">Apply</a></li>
-          <li><a href="#projects">Schedule</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#team-section">Team</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
+
     <nav id="hamburger-nav">
       <div class="logo">Welcome to MESA U Hacks</div>
       <div class="hamburger-menu">
@@ -43,414 +42,342 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#apply" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#apply" onclick="toggleMenu()">Apply</a></li>
           <li><a href="#schedule" onclick="toggleMenu()">Schedule</a></li>
+          <li><a href="#team-section" onclick="toggleMenu()">Team</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
+
+
+   
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/arrow.png" alt="MESA U Hacks Logo" />
+        <img src="./assets/drawing.png" alt="MESA U Hacks Logo" />
       </div>
+    
       <div class="section__text">
-        <p class="section__text__p1">Hello Welcome To,</p>
-        <h1 class="title">MESA U</h1>
-        <p class="section__text__p2">Hacks</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
-            Download CV
-          </button>
-
-
-           <!-- Button to scroll to the contact section -->
-          <button class="btn btn-color-1" onclick="scrollToContact()">
-            Contact Info
-        </button>
-        <!-- JavaScript function to scroll to the contact section -->
-        <script>
-            function scrollToContact() {
-              // Get the element with the ID "contact"
-                var contactSection = document.getElementById('contact');
-                // Check if the element exists
-                if (contactSection) {
-                   // Scroll to the "contact" section with a smooth behavior
-                    contactSection.scrollIntoView({ behavior: 'smooth' });
-                }
-            }
-        </script>
-        
-          
+        <h1 class="section__text__p1">Welcome To</h1>
+        <div class="concept concept-two">
+          <div class="hover">
+            <h1>M</h1>
+          </div>
+          <div class="hover">
+            <h1>E</h1>
+          </div>
+          <div class="hover">
+            <h1>S</h1>
+          </div>
+          <div class="hover">
+            <h1>A</h1>
+          </div>
+          <div class="hover">
+            <h1>-</h1>
+          </div>
+          <div class="hover">
+            <h1>U</h1>
+          </div>
         </div>
+        <h1 class="section__text__p2">Hacks</h1>
+
+        <div class="btn-container">
+          <button class="btn btn-color-1" onclick="scrollToApply()">
+            APPLY
+          </button>
+          <!-- JavaScript function to scroll to the contact section -->
+          <script>
+            function scrollToApply() {
+              // Get the element with the ID "apply"
+              var applySection = document.getElementById('apply');
+              // Check if the element exists
+              if (applySection) {
+                // Scroll to the "apply" section with a smooth behavior
+                applySection.scrollIntoView({ behavior: 'smooth' });
+              }
+            }
+          </script>
+        </div>
+    
         <div id="socials-container">
           <img
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://linkedin.com/'"
+            onclick="location.href='https://www.linkedin.com/in/mesa-u-hacks-50aaa92a6/'"
           />
+    
           <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/'"
+            src="./assets/22.png"
+            alt="Instagram"
+            class="icon1"
+            onclick="location.href='https://www.instagram.com/mesa.u.hacks/'"
           />
         </div>
       </div>
     </section>
     
+
+
+
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About MESA U HACKS</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/mesaLogo.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
+      <div class="section-wrapper">
+        <div class="section-body">
+          <h3 class="title">Come Hack with Us</h3>
+          <div class="about-content-container">
+            <div class="left-content">
+              <p>A hackathon is where your crazy ideas become reality. Build something: an app, a website, a game, a Slackbot, <em>anything</em>. The possibilities are limitless. Do something you've never done before. Move quickly—you only have 36 hours! Grab your breadboards, charge your laptops, and put on your Oculi. Let's HACK!</p>
+              <h2>Location</h2>
+              <p>MESA U HACKS will take place at <a href="https://www.csueastbay.edu/about/visitor-information/hayward-campus-map.html">California State University East Bay</a>, in Hayward Campus. The address is: <a href="https://www.google.com/maps/place/California+State+University,+East+Bay/@37.6566086,-122.0571725,17z/data=!4m10!1m2!2m1!1scsueb+address!3m6!1s0x808f938a2a66cb0f:0x6e8f52a8e9002934!8m2!3d37.6560295!4d-122.0561984!15sCg1jc3VlYiBhZGRyZXNzIgJIAZIBEXB1YmxpY191bml2ZXJzaXR54AEA!16zL20vMDJrMHBu?entry=ttu">25800 Carlos Bee Blvd, Hayward, CA 94542</a></p>
+              <p>See you there :)</p>
+            </div>
+          </div>
         </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-
-              <h3>apply</h3>
-              <p>2+ years <br />Frontend Development</p>
-            </div>
-            <div class="details-container">
-              
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
-            </p>
-          </div>
+        <div class="section-image">
+          <img src="./assets/mesau.png" alt="MESA-U group">
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
+      <div class="slant bottom left"></div>
     </section>
-    <section id="apply">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-
-    </section>
-
-
-    <section id="schedule">
-      <p class="section__text__p3">Keep track of whats going on.</p>
-      <div class="schedule-subheading">
-        <h1> Schedule</h1>
-      </div>
-      <span class="icon1">
-        <img src="white_gears.png" alt="White Gears">
-      </span>
-      <span class="icon2">
-        <img src="thinking_heads.png" alt="Brainstorming">
-      </span>
-      <span class="background1">
-        <img src="keyboard-vector.jpg" alt="Keyboard">
-      </span>
-      <span class="laptop-icon">
-        <img src="laptop-computer-icons-computer-monitors-laptops.jpeg" alt="Laptop">
-      </span>
-      <div class="timeline-detail-container">
-  <!-- Friday Agenda -->
-          <table class="friday-details">
-            <tr>
-              <th colspan="3">    Day 01 - Friday, April 19th   </th>
-            </tr>
-            <tr>
-
-              <td> 4pm - 4:20pm : Virtual Late Afternoon Kick-off</td>
-              <td> </td>
-            </tr>
-            <tr>
-              <td> 4:20 - 4:50pm : For MS/HS : Intro to Hackathon on Zoom presented by Peter and Monica</td>
-              <td> </td>
-            </tr>
-            <tr>
-              <td> 4:50 - 5:50pm : Brainstorming/Community Building </td>
-              <td> </td>
-            </tr>
-            <tr>
-              <td> 5:50 - 6:10pm  : Break</td>
-              <td> </td>
-            </tr>
-            <tr>
-              <td> 6:10 - 7:00pm : workshop</td>
-              <td> </td>
-            </tr>
-            <tr>
-              <td> 7 - 8pm : College Social</td>
-              <td> </td>
-            </tr>
-          </table>
-  
-      
-  <!-- Saturday Agenda -->
-          <table class="saturday-details">
-            <tr>
-              <th colspan="3"> Day 02 - Saturday, April 20th </th>
-            </tr>
-            <tr>
-              <td width="10%"> </td>
-              <td>    8am : MS & HS Guest Arrive    </td>
-            </tr>
-            <tr>
-              <td width="10%"> </td>
-              <td>    8am - 8:45am : Breakfast (Food Description: TBD)    </td>
-            </tr>
-            <tr>
-              <td width="10%"> </td>
-              <td>   8:45am - 8:50am : Mesa directors speech   </td>
-            </tr>
-            <tr>
-              <td width="10%"> </td>
-              <td>   8:50am - 9:00am : Meet the Committee     </td>
-            </tr>
-            <tr>
-              <td width="10%"> </td>
-              <td>   9:00am - 9:15am :  Announcing upcoming workshops/Speakers    </td>
-            </tr>
-            <tr>
-              <td width="10%"> </td>
-              <td>    9:15am - 9:30am : Break    </td>
-            </tr>
-            <tr>
-              <td width="10%"> </td>
-              <td>    9:30am - 10:30am : Workshop 1 info    </td>
-            </tr>
-            <tr>
-              <td width="10%"> </td>
-              <td>     10:30am - 11:15am :  Intermission   </td>
-            </tr>
-            <tr>
-              <td width="10%"> </td>
-              <td>     11:15am - 12:15pm : Workshop 2 info   </td>
-            </tr>
-            <tr>
-              <td width="10%"> </td>
-              <td>    12:15 - 12:30pm : Row 1   </td>
-            </tr>
-            <tr>
-              <td width="10%"> </td>
-              <td>     12:30 - 1:30pm : Lunch & Keynote Speaker   </td>
-            </tr>
-            <tr>
-              <td width="10%"> </td>
-              <td>     1:45 - 2:45pm : Workshop 3 info   </td>
-            </tr>
-            <tr>
-              <td width="10%"> </td>
-              <td>    3:00 - 3:40pm : MS & HS Guest Campus Tour   </td>
-            </tr>
-            <tr>
-              <td width="10%"> </td>
-              <td>   3:50 - 4:00pm : Outro for MS & HS Guest   </td>
-            </tr>
-          </table>
-  
-  
-  <!-- Sunday Agenda -->
-          <table class="sunday-details">
-            <tr>
-              <th colspan="2">  Day 03 - Sunday, April 21th </th>
-            </tr>
-            <tr>
-              <td> 8am - 8:30am : Virtual Close Out </td>
-            </tr>
-            <tr>
-              <td> 10am : TBD </td>
-            </tr>
-            <tr>
-              <td> Time : Judging Period</td>
-            </tr>
-            <tr>
-              <td> Time : Announcing Winners @ Location</td>
-            </tr>
-            <tr> 
-              <td>Time : Closing Ceremony </td>
-            </tr>
-          </table>
     
-  
-        
-  <!--
-  Saturday rounded square 
-          <rect x="550" y="20" rx="60" width="500" height="300" style="fill:orange;stroke:red;stroke-width:5;opacity:0.5"/>
-        </svg>  
-  
-  
-    Sunday rounded Square 
-        <svg width= "600" height="600">
-          <rect x="5" y="20" rx="60" width="500" height="300" style="fill:orange;stroke:red;stroke-width:5;opacity:0.5"/>
-        </svg>
-  -->
-     </div>
-    </section>
 
 
+
+    
+  <section id="apply" class="bounce-top">
+    <div class="title">
+      <div data-tf-live="01HJVFQQR8567C2KE4FPXSTC9F"></div>
+      <script src="https://embed.typeform.com/next/embed.js"></script>
+    </div>
+  </section>
+
+
+
+  <section id="schedule">
+    <p class="section__text__p1">Browse The</p>
+    <h1 class="title">Schedule</h1>
+    <span class="icon1">
+      <img src="white_gears.png" alt="White Gears">
+    </span>
+    <span class="icon2">
+      <img src="thinking_heads.png" alt="Brainstorming">
+    </span>
+    <span class="background1">
+      <img src="keyboard-vector.jpg" alt="Keyboard">
+    </span>
+    <span class="laptop-icon">
+      <img src="laptop-computer-icons-computer-monitors-laptops.jpeg" alt="Laptop">
+    </span>
+    <div class="timeline-detail-container">
+      
+      <!-- Friday Agenda -->
+              <table class="friday-details">
+                <tr>
+                  <th colspan="3">    Day 01 - Friday, April 19th   </th>
+                </tr>
+                <tr>
+    
+                  <td> 4pm - 4:20pm : Virtual Late Afternoon Kick-off</td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td> 4:20 - 4:50pm : For MS/HS : Intro to Hackathon on Zoom presented by Peter and Monica</td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td> 4:50 - 5:50pm : Brainstorming/Community Building </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td> 5:50 - 6:10pm  : Break</td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td> 6:10 - 7:00pm : workshop</td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td> 7 - 8pm : College Social</td>
+                  <td> </td>
+                </tr>
+              </table>
+      
+          
+      <!-- Saturday Agenda -->
+              <table class="saturday-details">
+                <tr>
+                  <th colspan="3"> Day 02 - Saturday, April 20th </th>
+                </tr>
+                <tr>
+                  <td width="10%"> </td>
+                  <td>    8am : MS & HS Guest Arrive    </td>
+                </tr>
+                <tr>
+                  <td width="10%"> </td>
+                  <td>    8am - 8:45am : Breakfast (Food Description: TBD)    </td>
+                </tr>
+                <tr>
+                  <td width="10%"> </td>
+                  <td>   8:45am - 8:50am : Mesa directors speech   </td>
+                </tr>
+                <tr>
+                  <td width="10%"> </td>
+                  <td>   8:50am - 9:00am : Meet the Committee     </td>
+                </tr>
+                <tr>
+                  <td width="10%"> </td>
+                  <td>   9:00am - 9:15am :  Announcing upcoming workshops/Speakers    </td>
+                </tr>
+                <tr>
+                  <td width="10%"> </td>
+                  <td>    9:15am - 9:30am : Break    </td>
+                </tr>
+                <tr>
+                  <td width="10%"> </td>
+                  <td>    9:30am - 10:30am : Workshop 1 info    </td>
+                </tr>
+                <tr>
+                  <td width="10%"> </td>
+                  <td>     10:30am - 11:15am :  Intermission   </td>
+                </tr>
+                <tr>
+                  <td width="10%"> </td>
+                  <td>     11:15am - 12:15pm : Workshop 2 info   </td>
+                </tr>
+                <tr>
+                  <td width="10%"> </td>
+                  <td>    12:15 - 12:30pm : Row 1   </td>
+                </tr>
+                <tr>
+                  <td width="10%"> </td>
+                  <td>     12:30 - 1:30pm : Lunch & Keynote Speaker   </td>
+                </tr>
+                <tr>
+                  <td width="10%"> </td>
+                  <td>     1:45 - 2:45pm : Workshop 3 info   </td>
+                </tr>
+                <tr>
+                  <td width="10%"> </td>
+                  <td>    3:00 - 3:40pm : MS & HS Guest Campus Tour   </td>
+                </tr>
+                <tr>
+                  <td width="10%"> </td>
+                  <td>   3:50 - 4:00pm : Outro for MS & HS Guest   </td>
+                </tr>
+              </table>
+      
+      
+      <!-- Sunday Agenda -->
+              <table class="sunday-details">
+                <tr>
+                  <th colspan="2">  Day 03 - Sunday, April 21th </th>
+                </tr>
+                <tr>
+                  <td> 8am - 8:30am : Virtual Close Out </td>
+                </tr>
+                <tr>
+                  <td> 10am : TBD </td>
+                </tr>
+                <tr>
+                  <td> Time : Judging Period</td>
+                </tr>
+                <tr>
+                  <td> Time : Announcing Winners @ Location</td>
+                </tr>
+                <tr> 
+                  <td>Time : Closing Ceremony </td>
+                </tr>
+              </table>
+    </div>    
+  </section>
+
+
+
+
+
+<!-- Team Section -->
+<section class="container column" id="team-section">
+  <h1 class="title">Meet the Team</h1>
+  <!-- Individual Team Members -->
+  <div class="container row" id="project-container">
+
+  <!-- Monica Rico -->
+  <div class="each-project grads">
+    <img class="proj-img" src="assets/monica.jpg" alt="Shivi">
+    <div class="proj-description container column">
+      <div class="img-description">
+        <h2>
+          <a href="https://www.linkedin.com/in/mon-rico/" target="_blank" rel="noopener noreferrer">Monica Rico</a>
+        </h2>
+        <p>Computer Science Student</p>
+        <i>CSU East Bay</i>
+      </div>
+    </div>
+  </div>
+
+  <!-- Peter -->
+  <div class="each-project grads">
+    <img class="proj-img" src="assets/peter.jpg" alt="Shivi">
+    <div class="proj-description container column">
+      <div class="img-description">
+        <h2>
+          <a href="https://www.linkedin.com/in/petercrackthecode/" target="_blank" rel="noopener noreferrer">Peter Nguyen</a>
+        </h2>
+        <p>Computer Science Student</p>
+        <i>CSU East Bay</i>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shivi -->
+  <div class="each-project grads">
+    <img class="proj-img" src="assets/shivi.jpg" alt="Shivi">
+    <div class="proj-description container column">
+      <div class="img-description">
+        <h2>
+          <a href="https://www.linkedin./" target="_blank" rel="noopener noreferrer">Shivangi (Shivi) Manel</a>
+        </h2>
+        <p>Computer Science Student</p>
+        <i>Chabot College</i>
+      </div>
+    </div>
+  </div>
+
+    <!-- Muhammad Jawwad -->
+    <div class="each-project grads">
+      <img class="proj-img" src="assets/muhammad.jpg" alt="Muhammad Jawwad">
+      <div class="proj-description container column">
+        <div class="img-description">
+          <h2>
+            <a href="https://www.linkedin.com/in/msjawwad/" target="_blank" rel="noopener noreferrer">Muhammad Jawwad</a>
+          </h2>
+          <p>Graduate Student at SJSU</p>
+          <i>BS Computer Science, MS Informatics</i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Andrea Labra Orozco -->
+    <div class="each-project grads">
+      <img class="proj-img" src="assets/andrea.png" alt="Andrea Labra Orozco">
+      <div class="proj-description container column">
+        <div class="img-description">
+          <h2>
+            <a href="https://www.linkedin.com/in/andrealabrao/" target="_blank" rel="noopener noreferrer">Andrea Labra Orozco</a>
+          </h2>
+          <p>Graduate Student at CSUEB</p>
+          <i>BS Computer Science, MS Statistics Data Science</i>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 
     <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
+     
+      <h1 class="title">Contact Us</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
@@ -458,7 +385,7 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+          <p><a href="mesa.u.hacks@gmail.com">EMAIL</a></p>
         </div>
         <div class="contact-info-container">
           <img
@@ -468,20 +395,28 @@
           />
           <p><a href="https://www.linkedin.com">LinkedIn</a></p>
         </div>
+      </section>
+
+        <div class="section__pic1-container">
+          <img src="./assets/smallLogo.png" alt="MESA U Hacks Logo" />
+        </div>
       </div>
-    </section>
+
+
+
     <footer>
-      <nav>
+      <!--<nav>
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#apply">Apply</a></li>
             <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#team-section">Team</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
-      </nav>
-      <p>Made with ♡ & ☕︎</p>
+      </nav>-->
+      <p>Made with ♡ & ☕︎ by MESA U HACKS Team </p>
     </footer>
     <script src="script.js"></script>
   </body>
