@@ -1,7 +1,6 @@
 /* GENERAL */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +29,7 @@ animation: bg 20s linear infinite;
     background-position-x: 0;
   }
   100% {
-    background-position-x: 10000px;
+    background-position-x: 1000px;
   }
 }
 
@@ -500,9 +499,6 @@ h1 {
 
 
 
-
-
-
 /* apply */
 .bounce-top {
   animation: bounce-top 0.15s both;
@@ -516,13 +512,9 @@ h1 {
 
 /* Schedule SECTION */
 #schedule{
-  position: justify;  
+  display:flex;  
   flex-direction: column;
-  /*background-color: beige;*/ 
-  margin-bottom: 150px;
-  height:100%
-  
-  
+  margin-bottom: auto;
 }
 
 .designs{
@@ -531,9 +523,7 @@ h1 {
   width: 600px;
 
 }
-.section__text__p3{
-  text-align: center;
-}
+
 .schedule-subheading{
   border-color: #5c5c5c;
   border-radius: 50px;
@@ -541,7 +531,6 @@ h1 {
   color: #fffffe;
   padding: 20px;
   text-align:center;
-  /*text-decoration: underline;*/
   width: 50%;
   font-size:xx-large;
   gap:10rem;
@@ -549,53 +538,61 @@ h1 {
   margin-bottom: 30px;
   
 }
-
-
-.friday-details{
- margin-left: 400px;
- width:80%;
-  
-}
-.saturday-details{
-  width:100%;
-  margin-left: -250px;
+.icon1{
+  width: 50%;
+  margin-left: 250px;
 }
 
-.sunday-details{
-  margin-left: 400px;
-}
 
+/* Whole table in General*/
 table{
-  
-  border: 3px solid #737373;
+  display:inline-table;
+  position:relative;
+  border: 3px solid white;
   border-radius: 5px;
-  gap:0.5rem;
-  text-transform: capitalize;
-  vertical-align: middle;
-  color:white;
-  background-color:#66251f;
+  vertical-align:center;
+  color:rgb(53, 53, 53);
+  background-color: transparent;
   text-align: center;
-  width:80%;
-  margin-bottom: 40px;
-  font-size: large;
+  text-transform: capitalize;
+  font-size: medium;
+  width: 30%;
+  
    
 }
+
 td:hover{
-  background-color: grey;
+  background-color: rgb(225, 215, 215);
 }
 tr{
-  
-  height: 50px;
+  height: 45px;
 }
 th{
   text-decoration-line:underline;
   width:40px;
 }
-td{
-  
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, fantasy;
-  width:15%;
+
+
+.friday-details{
+ margin-left: -100px;
+ margin-right: 1px;
 }
+.saturday-details{
+  margin-left: 5px;
+  width:39%;
+  height:40%;
+}
+
+.sunday-details{
+  margin-left: 5px;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
 
 
 /* CONTACT */
