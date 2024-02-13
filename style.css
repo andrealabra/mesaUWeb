@@ -547,7 +547,7 @@ h1 {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  height: 45vh;
 }
 
 .contact-info-upper-container {
@@ -626,7 +626,7 @@ h1 {
 /* FOOTER SECTION */
 
 footer {
-  height: 26vh;
+  height: 18vh;
   margin: 0 1rem;
 }
 
