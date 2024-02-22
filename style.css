@@ -526,9 +526,9 @@ h1 {
 }
 
 .project-img {
-  border-radius: 2rem;
-  width: 80%;
-  height: 80%;
+  border-radius: 1rem;
+  width: 95%;
+  height: 95%;
 }
 
 .project-title {
